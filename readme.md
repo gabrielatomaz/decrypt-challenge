@@ -34,7 +34,7 @@ hashcat -m 1400 -a 3 4dc207a086d24bcd29125d39adbb17190464f0aa259bc6a5f7c367cd365
 
 ### 🔑 Step 2: Decrypting the RSA Public Key 
 
-After obtaining the password from Hashcat (this took 6 days and 10 hours on an 8GB RAM server 🖥️💻), use it to decrypt the RSA public key.
+After obtaining the password from Hashcat (this took 6 days and 10 hours on an 8GB RAM i5 computer), use it to decrypt the RSA public key.
 
 ```bash
 openssl aes-256-cbc -a -nosalt -d -in key_public.en -out key_public.txt
